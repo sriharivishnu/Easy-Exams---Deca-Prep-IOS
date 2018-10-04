@@ -7,21 +7,31 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		8A09872D215FD80E00B7583C /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 8ABAA212215F10A30005CDCB /* Main.storyboard */; };
+		8A09872F215FE60100B7583C /* MainTabController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8A09872E215FE60100B7583C /* MainTabController.swift */; };
+		8A09873121612F3600B7583C /* ChooseExam.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8A09873021612F3600B7583C /* ChooseExam.swift */; };
+		8A0987332164692100B7583C /* ChooseExamTableCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8A0987322164692100B7583C /* ChooseExamTableCell.swift */; };
 		8ABAA20F215F10A30005CDCB /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8ABAA20E215F10A30005CDCB /* AppDelegate.swift */; };
-		8ABAA211215F10A30005CDCB /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8ABAA210215F10A30005CDCB /* ViewController.swift */; };
-		8ABAA214215F10A30005CDCB /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 8ABAA212215F10A30005CDCB /* Main.storyboard */; };
+		8ABAA211215F10A30005CDCB /* MainViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8ABAA210215F10A30005CDCB /* MainViewController.swift */; };
 		8ABAA216215F10A30005CDCB /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 8ABAA215215F10A30005CDCB /* Assets.xcassets */; };
 		8ABAA219215F10A30005CDCB /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 8ABAA217215F10A30005CDCB /* LaunchScreen.storyboard */; };
+		921AD45145A165D46687497C /* Pods_Easy_Exams___Deca_Prep.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A77D935F1E2599AB487B259D /* Pods_Easy_Exams___Deca_Prep.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		736CBC3F7B4168E5AFE12A60 /* Pods-Easy Exams - Deca Prep.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Easy Exams - Deca Prep.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Easy Exams - Deca Prep/Pods-Easy Exams - Deca Prep.debug.xcconfig"; sourceTree = "<group>"; };
+		7C4F5A513ACA8DE69FB88A85 /* Pods-Easy Exams - Deca Prep.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Easy Exams - Deca Prep.release.xcconfig"; path = "Pods/Target Support Files/Pods-Easy Exams - Deca Prep/Pods-Easy Exams - Deca Prep.release.xcconfig"; sourceTree = "<group>"; };
+		8A09872E215FE60100B7583C /* MainTabController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainTabController.swift; sourceTree = "<group>"; };
+		8A09873021612F3600B7583C /* ChooseExam.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChooseExam.swift; sourceTree = "<group>"; };
+		8A0987322164692100B7583C /* ChooseExamTableCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChooseExamTableCell.swift; sourceTree = "<group>"; };
 		8ABAA20B215F10A30005CDCB /* Easy Exams - Deca Prep.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Easy Exams - Deca Prep.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		8ABAA20E215F10A30005CDCB /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		8ABAA210215F10A30005CDCB /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		8ABAA210215F10A30005CDCB /* MainViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainViewController.swift; sourceTree = "<group>"; };
 		8ABAA213215F10A30005CDCB /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		8ABAA215215F10A30005CDCB /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		8ABAA218215F10A30005CDCB /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		8ABAA21A215F10A30005CDCB /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		A77D935F1E2599AB487B259D /* Pods_Easy_Exams___Deca_Prep.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = "Pods_Easy_Exams___Deca_Prep.framework"; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -29,6 +39,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				921AD45145A165D46687497C /* Pods_Easy_Exams___Deca_Prep.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -40,6 +51,8 @@
 			children = (
 				8ABAA20D215F10A30005CDCB /* Easy Exams - Deca Prep */,
 				8ABAA20C215F10A30005CDCB /* Products */,
+				95D1BC6BFA2D477D1A3248FF /* Pods */,
+				A03F038643FB253477E07E12 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -55,13 +68,33 @@
 			isa = PBXGroup;
 			children = (
 				8ABAA20E215F10A30005CDCB /* AppDelegate.swift */,
-				8ABAA210215F10A30005CDCB /* ViewController.swift */,
+				8ABAA210215F10A30005CDCB /* MainViewController.swift */,
 				8ABAA212215F10A30005CDCB /* Main.storyboard */,
 				8ABAA215215F10A30005CDCB /* Assets.xcassets */,
 				8ABAA217215F10A30005CDCB /* LaunchScreen.storyboard */,
 				8ABAA21A215F10A30005CDCB /* Info.plist */,
+				8A09872E215FE60100B7583C /* MainTabController.swift */,
+				8A09873021612F3600B7583C /* ChooseExam.swift */,
+				8A0987322164692100B7583C /* ChooseExamTableCell.swift */,
 			);
 			path = "Easy Exams - Deca Prep";
+			sourceTree = "<group>";
+		};
+		95D1BC6BFA2D477D1A3248FF /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				736CBC3F7B4168E5AFE12A60 /* Pods-Easy Exams - Deca Prep.debug.xcconfig */,
+				7C4F5A513ACA8DE69FB88A85 /* Pods-Easy Exams - Deca Prep.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+		A03F038643FB253477E07E12 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				A77D935F1E2599AB487B259D /* Pods_Easy_Exams___Deca_Prep.framework */,
+			);
+			name = Frameworks;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -71,9 +104,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 8ABAA21D215F10A30005CDCB /* Build configuration list for PBXNativeTarget "Easy Exams - Deca Prep" */;
 			buildPhases = (
+				1EE05C1732DF1AED1F88B64D /* [CP] Check Pods Manifest.lock */,
 				8ABAA207215F10A30005CDCB /* Sources */,
 				8ABAA208215F10A30005CDCB /* Frameworks */,
 				8ABAA209215F10A30005CDCB /* Resources */,
+				FEF2913005A2AB42CDB9924E /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -123,21 +158,75 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				8A09872D215FD80E00B7583C /* Main.storyboard in Resources */,
 				8ABAA219215F10A30005CDCB /* LaunchScreen.storyboard in Resources */,
 				8ABAA216215F10A30005CDCB /* Assets.xcassets in Resources */,
-				8ABAA214215F10A30005CDCB /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		1EE05C1732DF1AED1F88B64D /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-Easy Exams - Deca Prep-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		FEF2913005A2AB42CDB9924E /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${SRCROOT}/Pods/Target Support Files/Pods-Easy Exams - Deca Prep/Pods-Easy Exams - Deca Prep-frameworks.sh",
+				"${BUILT_PRODUCTS_DIR}/GTMSessionFetcher/GTMSessionFetcher.framework",
+				"${BUILT_PRODUCTS_DIR}/GoogleUtilities/GoogleUtilities.framework",
+				"${BUILT_PRODUCTS_DIR}/nanopb/nanopb.framework",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/GTMSessionFetcher.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/GoogleUtilities.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/nanopb.framework",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-Easy Exams - Deca Prep/Pods-Easy Exams - Deca Prep-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		8ABAA207215F10A30005CDCB /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				8ABAA211215F10A30005CDCB /* ViewController.swift in Sources */,
+				8ABAA211215F10A30005CDCB /* MainViewController.swift in Sources */,
 				8ABAA20F215F10A30005CDCB /* AppDelegate.swift in Sources */,
+				8A0987332164692100B7583C /* ChooseExamTableCell.swift in Sources */,
+				8A09872F215FE60100B7583C /* MainTabController.swift in Sources */,
+				8A09873121612F3600B7583C /* ChooseExam.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -272,9 +361,11 @@
 		};
 		8ABAA21E215F10A30005CDCB /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 736CBC3F7B4168E5AFE12A60 /* Pods-Easy Exams - Deca Prep.debug.xcconfig */;
 			buildSettings = {
-				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
 				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 8Z29Y7J8DF;
 				INFOPLIST_FILE = "Easy Exams - Deca Prep/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "MagnitudeStudios.Easy-Exams---Deca-Prep";
@@ -286,9 +377,11 @@
 		};
 		8ABAA21F215F10A30005CDCB /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 7C4F5A513ACA8DE69FB88A85 /* Pods-Easy Exams - Deca Prep.release.xcconfig */;
 			buildSettings = {
-				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
 				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 8Z29Y7J8DF;
 				INFOPLIST_FILE = "Easy Exams - Deca Prep/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "MagnitudeStudios.Easy-Exams---Deca-Prep";

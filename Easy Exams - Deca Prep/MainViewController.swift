@@ -8,8 +8,8 @@
 
 import UIKit
 
-class ViewController: UIViewController {
-
+class MainViewController: UIViewController {
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view, typically from a nib.
@@ -20,6 +20,14 @@ class ViewController: UIViewController {
         // Dispose of any resources that can be recreated.
     }
 
-
+    @IBAction func startExam(_ sender: Any) {
+        //Start Exam
+        let mainTabController = storyboard?.instantiateViewController(withIdentifier:"mainTabController") as! MainTabController
+        mainTabController.selectedViewController = mainTabController.viewControllers?[1]
+        present(mainTabController, animated: true, completion: nil)
+        
+        
+    }
+    
 }
 
