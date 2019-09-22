@@ -79,7 +79,7 @@
                     </view>
                     <tabBarItem key="tabBarItem" title="Home" image="home_icon" id="TY0-8V-kXa"/>
                     <connections>
-                        <outlet property="my_textview" destination="VR2-jq-pY4" id="E6p-5Z-z8Z"/>
+                        <outlet property="my_textview" destination="VR2-jq-pY4" id="fVY-Kc-ws0"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
@@ -125,7 +125,7 @@
                                                     </constraints>
                                                 </imageView>
                                                 <label opaque="NO" userInteractionEnabled="NO" tag="1" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="label" textAlignment="natural" lineBreakMode="wordWrap" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="w2D-TY-Rjy">
-                                                    <rect key="frame" x="68" y="11" width="250" height="30"/>
+                                                    <rect key="frame" x="68" y="11" width="36" height="30"/>
                                                     <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                                     <color key="textColor" white="0.33333333333333331" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                     <nil key="highlightedColor"/>
@@ -135,7 +135,7 @@
                                                 <constraint firstItem="w2D-TY-Rjy" firstAttribute="top" secondItem="ZnW-VV-NYH" secondAttribute="topMargin" id="HKh-9E-9F9"/>
                                                 <constraint firstItem="FHg-0i-ZE6" firstAttribute="top" secondItem="ZnW-VV-NYH" secondAttribute="topMargin" constant="-9" id="LNR-CG-Rq1"/>
                                                 <constraint firstItem="w2D-TY-Rjy" firstAttribute="leading" secondItem="FHg-0i-ZE6" secondAttribute="trailing" constant="8" symbolic="YES" id="NRF-if-HGt"/>
-                                                <constraint firstAttribute="trailing" secondItem="w2D-TY-Rjy" secondAttribute="trailing" constant="96" id="O1v-Qv-D2K"/>
+                                                <constraint firstAttribute="trailing" secondItem="w2D-TY-Rjy" secondAttribute="trailing" constant="310" id="O1v-Qv-D2K"/>
                                                 <constraint firstItem="w2D-TY-Rjy" firstAttribute="centerY" secondItem="ZnW-VV-NYH" secondAttribute="centerY" constant="1.1666666666666679" id="edr-IA-Ese"/>
                                                 <constraint firstItem="FHg-0i-ZE6" firstAttribute="leading" secondItem="ZnW-VV-NYH" secondAttribute="leadingMargin" constant="-5" id="iLD-r7-OTh"/>
                                                 <constraint firstItem="FHg-0i-ZE6" firstAttribute="centerY" secondItem="w2D-TY-Rjy" secondAttribute="centerY" constant="-1.1666666666666679" id="k5w-Mw-Pso"/>
@@ -204,8 +204,8 @@
                                 <color key="backgroundColor" red="0.14117647059999999" green="0.4431372549" blue="0.63921568630000003" alpha="1" colorSpace="calibratedRGB"/>
                                 <color key="tintColor" red="0.2274509804" green="0.56078431370000004" blue="0.84313725490000002" alpha="1" colorSpace="calibratedRGB"/>
                             </view>
-                            <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" pagingEnabled="YES" translatesAutoresizingMaskIntoConstraints="NO" id="zdG-A3-56E">
-                                <rect key="frame" x="0.0" y="89" width="414" height="676.33333333333337"/>
+                            <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" bounces="NO" pagingEnabled="YES" showsHorizontalScrollIndicator="NO" showsVerticalScrollIndicator="NO" minimumZoomScale="0.0" maximumZoomScale="0.0" bouncesZoom="NO" translatesAutoresizingMaskIntoConstraints="NO" id="zdG-A3-56E">
+                                <rect key="frame" x="0.0" y="85" width="414" height="677"/>
                             </scrollView>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Marketing Exam" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Asu-d3-6AL">
                                 <rect key="frame" x="113" y="56" width="188" height="21"/>
@@ -228,9 +228,9 @@
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <constraints>
                             <constraint firstItem="zdG-A3-56E" firstAttribute="centerX" secondItem="WqU-Hv-1vb" secondAttribute="centerX" id="5Hl-Kt-8if"/>
-                            <constraint firstItem="zdG-A3-56E" firstAttribute="top" secondItem="Asu-d3-6AL" secondAttribute="bottom" constant="12" id="C7T-b7-Qae"/>
+                            <constraint firstItem="zdG-A3-56E" firstAttribute="top" secondItem="Asu-d3-6AL" secondAttribute="bottom" constant="8" id="C7T-b7-Qae"/>
                             <constraint firstItem="WqU-Hv-1vb" firstAttribute="leading" secondItem="FC2-Nq-jQC" secondAttribute="trailing" constant="38" id="NUp-Ah-79i"/>
-                            <constraint firstItem="WqU-Hv-1vb" firstAttribute="top" secondItem="zdG-A3-56E" secondAttribute="bottom" constant="5" id="P9h-gN-zdW"/>
+                            <constraint firstItem="WqU-Hv-1vb" firstAttribute="top" secondItem="zdG-A3-56E" secondAttribute="bottom" constant="8.3333333333333712" id="P9h-gN-zdW"/>
                             <constraint firstAttribute="trailing" secondItem="gVG-lx-1st" secondAttribute="trailing" id="RHQ-GN-Qgw"/>
                             <constraint firstItem="Asu-d3-6AL" firstAttribute="leading" secondItem="7Y8-Ej-NDp" secondAttribute="leading" constant="113" id="RaY-r3-yaj"/>
                             <constraint firstItem="FC2-Nq-jQC" firstAttribute="baseline" secondItem="WqU-Hv-1vb" secondAttribute="firstBaseline" id="alx-ZB-Smc"/>
@@ -242,8 +242,8 @@
                             <constraint firstItem="gVG-lx-1st" firstAttribute="trailing" secondItem="q8c-H9-hTB" secondAttribute="trailing" id="fgi-WA-lSr"/>
                             <constraint firstItem="gVG-lx-1st" firstAttribute="top" secondItem="s3g-if-swM" secondAttribute="top" id="iSF-3U-tTy"/>
                             <constraint firstItem="7Y8-Ej-NDp" firstAttribute="bottom" secondItem="WqU-Hv-1vb" secondAttribute="bottom" constant="10" id="jYN-gI-WPY"/>
-                            <constraint firstItem="zdG-A3-56E" firstAttribute="top" secondItem="q8c-H9-hTB" secondAttribute="bottom" id="ly5-le-1By"/>
-                            <constraint firstItem="FC2-Nq-jQC" firstAttribute="top" secondItem="zdG-A3-56E" secondAttribute="bottom" constant="11" id="rq4-zy-9xw"/>
+                            <constraint firstItem="zdG-A3-56E" firstAttribute="top" secondItem="q8c-H9-hTB" secondAttribute="bottom" constant="-4" id="ly5-le-1By"/>
+                            <constraint firstItem="FC2-Nq-jQC" firstAttribute="top" secondItem="zdG-A3-56E" secondAttribute="bottom" constant="14.333333333333371" id="rq4-zy-9xw"/>
                             <constraint firstItem="q8c-H9-hTB" firstAttribute="centerY" secondItem="Asu-d3-6AL" secondAttribute="centerY" id="rvf-ia-g3o"/>
                             <constraint firstItem="gVG-lx-1st" firstAttribute="leading" secondItem="s3g-if-swM" secondAttribute="leading" id="t93-jG-flj"/>
                             <constraint firstItem="FC2-Nq-jQC" firstAttribute="leading" secondItem="7Y8-Ej-NDp" secondAttribute="leading" constant="35" id="xSQ-e9-1Kt"/>
@@ -255,12 +255,13 @@
                     <simulatedTabBarMetrics key="simulatedBottomBarMetrics"/>
                     <connections>
                         <outlet property="ExamScrollView" destination="zdG-A3-56E" id="Q4B-oF-meX"/>
+                        <outlet property="examScrollView" destination="zdG-A3-56E" id="fJi-Jl-smK"/>
                         <outlet property="homeButton" destination="q8c-H9-hTB" id="nmF-Ww-cdz"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="RxX-EQ-lYA" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="3639.1999999999998" y="102.09895052473765"/>
+            <point key="canvasLocation" x="3639.130434782609" y="101.78571428571428"/>
         </scene>
         <!--Resources-->
         <scene sceneID="SwH-Ot-1K9">
@@ -328,6 +329,6 @@
         <image name="wrong_answers_button" width="200" height="39"/>
     </resources>
     <inferredMetricsTieBreakers>
-        <segue reference="OME-nZ-7Cf"/>
+        <segue reference="iVK-lc-Med"/>
     </inferredMetricsTieBreakers>
 </document>

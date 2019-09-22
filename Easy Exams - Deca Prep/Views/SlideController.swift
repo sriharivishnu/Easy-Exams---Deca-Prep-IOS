@@ -14,7 +14,8 @@ class Slide: UIView {
     @IBOutlet var secondResponse: UIButton!
     @IBOutlet var thirdResponse: UIButton!
     @IBOutlet var fourthResponse: UIButton!
-    @IBOutlet var questionText: UILabel!
+    @IBOutlet weak var questionText: UITextView!
+    
     
     /*
     // Only override draw() if you perform custom drawing.

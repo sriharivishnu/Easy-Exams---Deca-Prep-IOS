@@ -15,16 +15,6 @@ class MainViewController: UIViewController {
         super.viewDidLoad()
         // Do any additional setup after loading the view, typically from a nib.
         my_textview.text = "HERE2"
-        if let path = Bundle.main.path(forResource: "MarketingExamQuestions", ofType: "txt")
-        {
-            let fm = FileManager()
-            let exists = fm.fileExists(atPath: path)
-            if(exists){
-                let content = fm.contents(atPath: path)
-                let contentAsString = String(data: content!, encoding: String.Encoding.utf8)
-                my_textview.text = contentAsString
-            }
-        }
         
     }
 
@@ -39,7 +29,6 @@ class MainViewController: UIViewController {
         mainTabController.selectedViewController = mainTabController.viewControllers?[1]
         present(mainTabController, animated: true, completion: nil)
         my_textview.text = "HERE"
-        
         
     }
     
