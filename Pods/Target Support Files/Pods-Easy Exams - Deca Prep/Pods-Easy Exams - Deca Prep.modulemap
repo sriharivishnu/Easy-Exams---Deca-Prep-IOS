@@ -1,0 +1,6 @@
+framework module Pods_Easy_Exams___Deca_Prep {
+  umbrella header "Pods-Easy Exams - Deca Prep-umbrella.h"
+
+  export *
+  module * { export * }
+}

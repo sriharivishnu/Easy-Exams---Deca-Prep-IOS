@@ -15,7 +15,7 @@ class MainViewController: UIViewController {
         super.viewDidLoad()
         // Do any additional setup after loading the view, typically from a nib.
         my_textview.text = "HERE2"
-        if let path = Bundle.main.path(forResource: "srihari", ofType: "txt")
+        if let path = Bundle.main.path(forResource: "MarketingExamQuestions", ofType: "txt")
         {
             let fm = FileManager()
             let exists = fm.fileExists(atPath: path)

@@ -14,6 +14,14 @@
 		8A0987392166FB8500B7583C /* ExamViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8A0987382166FB8500B7583C /* ExamViewController.swift */; };
 		8A12655D2167AFA60076D617 /* Slide.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8A12655C2167AFA60076D617 /* Slide.swift */; };
 		8A272133233714B900C95330 /* srihari.txt in Resources */ = {isa = PBXBuildFile; fileRef = 8A272132233714B900C95330 /* srihari.txt */; };
+		8A27213D2337235A00C95330 /* HospitalityExamAnswers.txt in Resources */ = {isa = PBXBuildFile; fileRef = 8A2721352337235A00C95330 /* HospitalityExamAnswers.txt */; };
+		8A27213E2337235A00C95330 /* FinanceExamQuestions.txt in Resources */ = {isa = PBXBuildFile; fileRef = 8A2721362337235A00C95330 /* FinanceExamQuestions.txt */; };
+		8A27213F2337235A00C95330 /* BusinessAdminQuestions.txt in Resources */ = {isa = PBXBuildFile; fileRef = 8A2721372337235A00C95330 /* BusinessAdminQuestions.txt */; };
+		8A2721402337235A00C95330 /* BusinessAdminAnswers.txt in Resources */ = {isa = PBXBuildFile; fileRef = 8A2721382337235A00C95330 /* BusinessAdminAnswers.txt */; };
+		8A2721412337235A00C95330 /* MarketingExamQuestions.txt in Resources */ = {isa = PBXBuildFile; fileRef = 8A2721392337235A00C95330 /* MarketingExamQuestions.txt */; };
+		8A2721422337235A00C95330 /* HospitalityExamQuestions.txt in Resources */ = {isa = PBXBuildFile; fileRef = 8A27213A2337235A00C95330 /* HospitalityExamQuestions.txt */; };
+		8A2721432337235A00C95330 /* FinanceExamAnswers.txt in Resources */ = {isa = PBXBuildFile; fileRef = 8A27213B2337235A00C95330 /* FinanceExamAnswers.txt */; };
+		8A2721442337235A00C95330 /* MarketingExamAnswers.txt in Resources */ = {isa = PBXBuildFile; fileRef = 8A27213C2337235A00C95330 /* MarketingExamAnswers.txt */; };
 		8ABAA20F215F10A30005CDCB /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8ABAA20E215F10A30005CDCB /* AppDelegate.swift */; };
 		8ABAA211215F10A30005CDCB /* MainViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8ABAA210215F10A30005CDCB /* MainViewController.swift */; };
 		8ABAA216215F10A30005CDCB /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 8ABAA215215F10A30005CDCB /* Assets.xcassets */; };
@@ -30,6 +38,14 @@
 		8A0987382166FB8500B7583C /* ExamViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExamViewController.swift; sourceTree = "<group>"; };
 		8A12655C2167AFA60076D617 /* Slide.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Slide.swift; sourceTree = "<group>"; };
 		8A272132233714B900C95330 /* srihari.txt */ = {isa = PBXFileReference; lastKnownFileType = text; path = srihari.txt; sourceTree = "<group>"; };
+		8A2721352337235A00C95330 /* HospitalityExamAnswers.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = HospitalityExamAnswers.txt; sourceTree = "<group>"; };
+		8A2721362337235A00C95330 /* FinanceExamQuestions.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = FinanceExamQuestions.txt; sourceTree = "<group>"; };
+		8A2721372337235A00C95330 /* BusinessAdminQuestions.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = BusinessAdminQuestions.txt; sourceTree = "<group>"; };
+		8A2721382337235A00C95330 /* BusinessAdminAnswers.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = BusinessAdminAnswers.txt; sourceTree = "<group>"; };
+		8A2721392337235A00C95330 /* MarketingExamQuestions.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = MarketingExamQuestions.txt; sourceTree = "<group>"; };
+		8A27213A2337235A00C95330 /* HospitalityExamQuestions.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = HospitalityExamQuestions.txt; sourceTree = "<group>"; };
+		8A27213B2337235A00C95330 /* FinanceExamAnswers.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = FinanceExamAnswers.txt; sourceTree = "<group>"; };
+		8A27213C2337235A00C95330 /* MarketingExamAnswers.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = MarketingExamAnswers.txt; sourceTree = "<group>"; };
 		8ABAA20B215F10A30005CDCB /* Easy Exams - Deca Prep.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Easy Exams - Deca Prep.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		8ABAA20E215F10A30005CDCB /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		8ABAA210215F10A30005CDCB /* MainViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainViewController.swift; sourceTree = "<group>"; };
@@ -55,6 +71,14 @@
 		8A272134233714D500C95330 /* ExamAssets */ = {
 			isa = PBXGroup;
 			children = (
+				8A2721382337235A00C95330 /* BusinessAdminAnswers.txt */,
+				8A2721372337235A00C95330 /* BusinessAdminQuestions.txt */,
+				8A27213B2337235A00C95330 /* FinanceExamAnswers.txt */,
+				8A2721362337235A00C95330 /* FinanceExamQuestions.txt */,
+				8A2721352337235A00C95330 /* HospitalityExamAnswers.txt */,
+				8A27213A2337235A00C95330 /* HospitalityExamQuestions.txt */,
+				8A27213C2337235A00C95330 /* MarketingExamAnswers.txt */,
+				8A2721392337235A00C95330 /* MarketingExamQuestions.txt */,
 				8A272132233714B900C95330 /* srihari.txt */,
 			);
 			path = ExamAssets;
@@ -178,6 +202,14 @@
 				8A09872D215FD80E00B7583C /* Main.storyboard in Resources */,
 				8ABAA219215F10A30005CDCB /* LaunchScreen.storyboard in Resources */,
 				8ABAA216215F10A30005CDCB /* Assets.xcassets in Resources */,
+				8A2721432337235A00C95330 /* FinanceExamAnswers.txt in Resources */,
+				8A27213D2337235A00C95330 /* HospitalityExamAnswers.txt in Resources */,
+				8A27213E2337235A00C95330 /* FinanceExamQuestions.txt in Resources */,
+				8A2721412337235A00C95330 /* MarketingExamQuestions.txt in Resources */,
+				8A2721422337235A00C95330 /* HospitalityExamQuestions.txt in Resources */,
+				8A27213F2337235A00C95330 /* BusinessAdminQuestions.txt in Resources */,
+				8A2721402337235A00C95330 /* BusinessAdminAnswers.txt in Resources */,
+				8A2721442337235A00C95330 /* MarketingExamAnswers.txt in Resources */,
 				8A272133233714B900C95330 /* srihari.txt in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
