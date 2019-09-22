@@ -10,9 +10,22 @@ import UIKit
 
 class MainViewController: UIViewController {
     
+    @IBOutlet weak var my_textview: UITextView!
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view, typically from a nib.
+        my_textview.text = "HERE2"
+        if let path = Bundle.main.path(forResource: "srihari", ofType: "txt")
+        {
+            let fm = FileManager()
+            let exists = fm.fileExists(atPath: path)
+            if(exists){
+                let content = fm.contents(atPath: path)
+                let contentAsString = String(data: content!, encoding: String.Encoding.utf8)
+                my_textview.text = contentAsString
+            }
+        }
+        
     }
 
     override func didReceiveMemoryWarning() {
@@ -25,6 +38,7 @@ class MainViewController: UIViewController {
         let mainTabController = storyboard?.instantiateViewController(withIdentifier:"mainTabController") as! MainTabController
         mainTabController.selectedViewController = mainTabController.viewControllers?[1]
         present(mainTabController, animated: true, completion: nil)
+        my_textview.text = "HERE"
         
         
     }

@@ -11,6 +11,9 @@
 		8A09872F215FE60100B7583C /* MainTabController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8A09872E215FE60100B7583C /* MainTabController.swift */; };
 		8A09873121612F3600B7583C /* ChooseExam.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8A09873021612F3600B7583C /* ChooseExam.swift */; };
 		8A0987332164692100B7583C /* ChooseExamTableCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8A0987322164692100B7583C /* ChooseExamTableCell.swift */; };
+		8A0987392166FB8500B7583C /* ExamViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8A0987382166FB8500B7583C /* ExamViewController.swift */; };
+		8A12655D2167AFA60076D617 /* Slide.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8A12655C2167AFA60076D617 /* Slide.swift */; };
+		8A272133233714B900C95330 /* srihari.txt in Resources */ = {isa = PBXBuildFile; fileRef = 8A272132233714B900C95330 /* srihari.txt */; };
 		8ABAA20F215F10A30005CDCB /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8ABAA20E215F10A30005CDCB /* AppDelegate.swift */; };
 		8ABAA211215F10A30005CDCB /* MainViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8ABAA210215F10A30005CDCB /* MainViewController.swift */; };
 		8ABAA216215F10A30005CDCB /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 8ABAA215215F10A30005CDCB /* Assets.xcassets */; };
@@ -24,6 +27,9 @@
 		8A09872E215FE60100B7583C /* MainTabController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainTabController.swift; sourceTree = "<group>"; };
 		8A09873021612F3600B7583C /* ChooseExam.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChooseExam.swift; sourceTree = "<group>"; };
 		8A0987322164692100B7583C /* ChooseExamTableCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChooseExamTableCell.swift; sourceTree = "<group>"; };
+		8A0987382166FB8500B7583C /* ExamViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExamViewController.swift; sourceTree = "<group>"; };
+		8A12655C2167AFA60076D617 /* Slide.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Slide.swift; sourceTree = "<group>"; };
+		8A272132233714B900C95330 /* srihari.txt */ = {isa = PBXFileReference; lastKnownFileType = text; path = srihari.txt; sourceTree = "<group>"; };
 		8ABAA20B215F10A30005CDCB /* Easy Exams - Deca Prep.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Easy Exams - Deca Prep.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		8ABAA20E215F10A30005CDCB /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		8ABAA210215F10A30005CDCB /* MainViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainViewController.swift; sourceTree = "<group>"; };
@@ -46,6 +52,14 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		8A272134233714D500C95330 /* ExamAssets */ = {
+			isa = PBXGroup;
+			children = (
+				8A272132233714B900C95330 /* srihari.txt */,
+			);
+			path = ExamAssets;
+			sourceTree = "<group>";
+		};
 		8ABAA202215F10A30005CDCB = {
 			isa = PBXGroup;
 			children = (
@@ -70,12 +84,15 @@
 				8ABAA20E215F10A30005CDCB /* AppDelegate.swift */,
 				8ABAA210215F10A30005CDCB /* MainViewController.swift */,
 				8ABAA212215F10A30005CDCB /* Main.storyboard */,
+				8A12655C2167AFA60076D617 /* Slide.swift */,
 				8ABAA215215F10A30005CDCB /* Assets.xcassets */,
+				8A272134233714D500C95330 /* ExamAssets */,
 				8ABAA217215F10A30005CDCB /* LaunchScreen.storyboard */,
 				8ABAA21A215F10A30005CDCB /* Info.plist */,
 				8A09872E215FE60100B7583C /* MainTabController.swift */,
 				8A09873021612F3600B7583C /* ChooseExam.swift */,
 				8A0987322164692100B7583C /* ChooseExamTableCell.swift */,
+				8A0987382166FB8500B7583C /* ExamViewController.swift */,
 			);
 			path = "Easy Exams - Deca Prep";
 			sourceTree = "<group>";
@@ -126,7 +143,7 @@
 			isa = PBXProject;
 			attributes = {
 				LastSwiftUpdateCheck = 0920;
-				LastUpgradeCheck = 0920;
+				LastUpgradeCheck = 1010;
 				ORGANIZATIONNAME = "Srihari Vishnu";
 				TargetAttributes = {
 					8ABAA20A215F10A30005CDCB = {
@@ -161,6 +178,7 @@
 				8A09872D215FD80E00B7583C /* Main.storyboard in Resources */,
 				8ABAA219215F10A30005CDCB /* LaunchScreen.storyboard in Resources */,
 				8ABAA216215F10A30005CDCB /* Assets.xcassets in Resources */,
+				8A272133233714B900C95330 /* srihari.txt in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -226,7 +244,9 @@
 				8ABAA20F215F10A30005CDCB /* AppDelegate.swift in Sources */,
 				8A0987332164692100B7583C /* ChooseExamTableCell.swift in Sources */,
 				8A09872F215FE60100B7583C /* MainTabController.swift in Sources */,
+				8A12655D2167AFA60076D617 /* Slide.swift in Sources */,
 				8A09873121612F3600B7583C /* ChooseExam.swift in Sources */,
+				8A0987392166FB8500B7583C /* ExamViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -266,6 +286,7 @@
 				CLANG_WARN_BOOL_CONVERSION = YES;
 				CLANG_WARN_COMMA = YES;
 				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
 				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
 				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
 				CLANG_WARN_EMPTY_BODY = YES;
@@ -273,6 +294,7 @@
 				CLANG_WARN_INFINITE_RECURSION = YES;
 				CLANG_WARN_INT_CONVERSION = YES;
 				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
 				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
 				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
 				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
@@ -300,7 +322,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 11.2;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.1;
 				MTL_ENABLE_DEBUG_INFO = YES;
 				ONLY_ACTIVE_ARCH = YES;
 				SDKROOT = iphoneos;
@@ -323,6 +345,7 @@
 				CLANG_WARN_BOOL_CONVERSION = YES;
 				CLANG_WARN_COMMA = YES;
 				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
 				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
 				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
 				CLANG_WARN_EMPTY_BODY = YES;
@@ -330,6 +353,7 @@
 				CLANG_WARN_INFINITE_RECURSION = YES;
 				CLANG_WARN_INT_CONVERSION = YES;
 				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
 				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
 				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
 				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
@@ -351,7 +375,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 11.2;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.1;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				SDKROOT = iphoneos;
 				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
