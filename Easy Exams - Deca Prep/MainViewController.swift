@@ -10,11 +10,9 @@ import UIKit
 
 class MainViewController: UIViewController {
     
-    @IBOutlet weak var my_textview: UITextView!
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view, typically from a nib.
-        my_textview.text = "HERE2"
         
     }
 
@@ -28,7 +26,6 @@ class MainViewController: UIViewController {
         let mainTabController = storyboard?.instantiateViewController(withIdentifier:"mainTabController") as! MainTabController
         mainTabController.selectedViewController = mainTabController.viewControllers?[1]
         present(mainTabController, animated: true, completion: nil)
-        my_textview.text = "HERE"
         
     }
     

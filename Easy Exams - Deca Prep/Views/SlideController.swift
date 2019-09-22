@@ -9,7 +9,6 @@
 import UIKit
 
 class Slide: UIView {
-    @IBOutlet var questionView: UIScrollView!
     @IBOutlet var firstResponse: UIButton!
     @IBOutlet var secondResponse: UIButton!
     @IBOutlet var thirdResponse: UIButton!

@@ -13,15 +13,19 @@ import UIKit
 class ExamViewController : UIViewController, UIScrollViewDelegate {
     @IBOutlet weak var examScrollView: UIScrollView!
     @IBOutlet weak var homeButton: UIToolbar!
+    @IBOutlet weak var endExam: UIButton!
+    
     var lines : Array<String> = Array()
     var answers : Array<String> = Array()
     var questions : Array<Array<String> > = Array()
+    var slides : Array<Slide> = Array()
+    let blue = UIColor(red: CGFloat(58.0/255.0), green: CGFloat(143.0/255.0), blue: CGFloat(215.0/255.0), alpha: CGFloat(1))
     override func viewDidLoad() {
         super.viewDidLoad()
         lines = getLines(fileName: "MarketingExamQuestions")
         answers = getLines(fileName: "MarketingExamAnswers")
         initQuestions()
-        let slides = createSlides()
+        slides = createSlides()
         initSlideScrollView(slides: slides)
         examScrollView.delegate = self
         
@@ -47,14 +51,14 @@ class ExamViewController : UIViewController, UIScrollViewDelegate {
         let num = min(lines.count / 5, 100)
         var visited: [Bool] = []
         var n: Int
-        for _ in 0...lines.count/5 {
+        for _ in 0..<lines.count/5 {
             visited.append(false)
         }
         
-        for _ in 0...num {
-            n = Int.random(in: 0...lines.count/5)
+        for _ in 0..<num {
+            n = Int.random(in: 0...lines.count/5-1)
             while visited[n] {
-                n = Int.random(in: 0...lines.count/5)
+                n = Int.random(in: 0...lines.count/5-1)
             }
             visited[n] = true
             questions.append([String(n), "Z"])
@@ -63,26 +67,24 @@ class ExamViewController : UIViewController, UIScrollViewDelegate {
     }
     func createSlides() -> [Slide] {
         var s: [Slide] = []
-        for i in 0...100 {
+        for i in 0..<100 {
             let temp:Slide = Bundle.main.loadNibNamed("Slide", owner: self, options: nil)?.first as! Slide
             let questionNumber = Int(questions[i][0])!
             let questionText = lines[questionNumber*5]
             temp.questionText.text = String(i+1)+". "+String(questionText[questionText.index(questionText.startIndex, offsetBy: 3)..<questionText.endIndex])
             temp.firstResponse.setTitle(lines[questionNumber*5+1], for: .normal)
+            temp.firstResponse.sizeToFit()
+            temp.firstResponse.addTarget(self, action: #selector(ExamViewController.buttonTapped1(_:)), for: .touchUpInside)
             temp.secondResponse.setTitle(lines[questionNumber*5+2], for: .normal)
+            temp.secondResponse.addTarget(self, action: #selector(ExamViewController.buttonTapped2(_:)), for: .touchUpInside)
             temp.thirdResponse.setTitle(lines[questionNumber*5+3], for: .normal)
+            temp.thirdResponse.addTarget(self, action: #selector(ExamViewController.buttonTapped3(_:)), for: .touchUpInside)
             temp.fourthResponse.setTitle(lines[questionNumber*5+4], for: .normal)
+            temp.fourthResponse.addTarget(self, action: #selector(ExamViewController.buttonTapped4(_:)), for: .touchUpInside)
+            temp.questionText.setContentOffset(.zero, animated: true)
             s.append(temp)
             
         }
-//        let slide1:Slide = Bundle.main.loadNibNamed("Slide", owner: self, options: nil)?.first as! Slide
-//        slide1.firstResponse.setTitle("YESS", for: .normal)
-//        slide1.firstResponse.addTarget(self, action: #selector(ExamViewController.buttonTapped(_:)), for: .touchUpInside)
-//        let slide2:Slide = Bundle.main.loadNibNamed("Slide", owner: self, options:nil)?.first as! Slide
-//        let slide3:Slide = Bundle.main.loadNibNamed("Slide", owner: self, options:nil)?.first as! Slide
-//        s.append(slide1)
-//        s.append(slide2)
-//        s.append(slide3)
         return s
     }
     func initSlideScrollView(slides : [Slide]) {
@@ -96,7 +98,47 @@ class ExamViewController : UIViewController, UIScrollViewDelegate {
             examScrollView.addSubview(slides[i])
         }
     }
-    @objc func buttonTapped(_ sender : UIButton) {
-        homeButton.barTintColor = UIColor.green
+    @objc func buttonTapped1(_ sender : UIButton) {
+        sender.backgroundColor = UIColor.purple
+        selectedColourChange()
+        questions[getSlide()][1] = "A"
+    }
+    @objc func buttonTapped2(_ sender : UIButton) {
+        sender.backgroundColor = UIColor.purple
+        selectedColourChange()
+        questions[getSlide()][1] = "B"
+    }
+    @objc func buttonTapped3(_ sender : UIButton) {
+        sender.backgroundColor = UIColor.purple
+        selectedColourChange()
+        questions[getSlide()][1] = "C"
+    }
+    @objc func buttonTapped4(_ sender : UIButton) {
+        sender.backgroundColor = UIColor.purple
+        selectedColourChange()
+        questions[getSlide()][1] = "D"
+    }
+    func selectedColourChange() {
+        let choice: String = questions[getSlide()][1]
+        if (choice != "Z") {
+            if (choice == "A") {
+                slides[getSlide()].firstResponse.backgroundColor = blue
+            }
+            else if (choice == "B") {
+                slides[getSlide()].secondResponse.backgroundColor = blue
+            }
+            else if (choice == "C") {
+                slides[getSlide()].thirdResponse.backgroundColor = blue
+            }
+            else if (choice == "D"){
+                slides[getSlide()].fourthResponse.backgroundColor = blue
+            }
+        }
+    }
+    func scrollViewDidScroll(_ scrollView: UIScrollView) {
+        print (getSlide())
+    }
+    func getSlide() -> Int {
+        return Int(examScrollView.contentOffset.x/view.frame.width)
     }
 }
