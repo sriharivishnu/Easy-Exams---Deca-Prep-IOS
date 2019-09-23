@@ -15,15 +15,35 @@ class ExamViewController : UIViewController, UIScrollViewDelegate {
     @IBOutlet weak var homeButton: UIToolbar!
     @IBOutlet weak var endExam: UIButton!
     
+    var examNumber : Int?
+    
     var lines : Array<String> = Array()
     var answers : Array<String> = Array()
     var questions : Array<Array<String> > = Array()
     var slides : Array<Slide> = Array()
+    var num : Int = 0
+
     let blue = UIColor(red: CGFloat(58.0/255.0), green: CGFloat(143.0/255.0), blue: CGFloat(215.0/255.0), alpha: CGFloat(1))
     override func viewDidLoad() {
         super.viewDidLoad()
-        lines = getLines(fileName: "MarketingExamQuestions")
-        answers = getLines(fileName: "MarketingExamAnswers")
+        
+        if (examNumber == 0) {
+            lines = getLines(fileName: "MarketingExamQuestions")
+            answers = getLines(fileName: "MarketingExamAnswers")
+        }
+        else if (examNumber == 1) {
+            lines = getLines(fileName: "FinanceExamQuestions")
+            answers = getLines(fileName: "FinanceExamAnswers")
+        }
+        else if (examNumber == 2) {
+            lines = getLines(fileName: "HospitalityExamQuestions")
+            answers = getLines(fileName: "HospitalityExamAnswers")
+        }
+        else if (examNumber == 3) {
+            lines = getLines(fileName: "BusinessAdminExamQuestions")
+            answers = getLines(fileName: "BusinessAdminExamAnswers")
+        }
+        
         initQuestions()
         slides = createSlides()
         initSlideScrollView(slides: slides)
@@ -48,7 +68,7 @@ class ExamViewController : UIViewController, UIScrollViewDelegate {
         return [];
     }
     func initQuestions() {
-        let num = min(lines.count / 5, 100)
+        num = min(lines.count / 5, 100)
         var visited: [Bool] = []
         var n: Int
         for _ in 0..<lines.count/5 {
@@ -99,23 +119,23 @@ class ExamViewController : UIViewController, UIScrollViewDelegate {
         }
     }
     @objc func buttonTapped1(_ sender : UIButton) {
-        sender.backgroundColor = UIColor.purple
         selectedColourChange()
+        sender.backgroundColor = UIColor.purple
         questions[getSlide()][1] = "A"
     }
     @objc func buttonTapped2(_ sender : UIButton) {
-        sender.backgroundColor = UIColor.purple
         selectedColourChange()
+        sender.backgroundColor = UIColor.purple
         questions[getSlide()][1] = "B"
     }
     @objc func buttonTapped3(_ sender : UIButton) {
-        sender.backgroundColor = UIColor.purple
         selectedColourChange()
+        sender.backgroundColor = UIColor.purple
         questions[getSlide()][1] = "C"
     }
     @objc func buttonTapped4(_ sender : UIButton) {
-        sender.backgroundColor = UIColor.purple
         selectedColourChange()
+        sender.backgroundColor = UIColor.purple
         questions[getSlide()][1] = "D"
     }
     func selectedColourChange() {
@@ -140,5 +160,27 @@ class ExamViewController : UIViewController, UIScrollViewDelegate {
     }
     func getSlide() -> Int {
         return Int(examScrollView.contentOffset.x/view.frame.width)
+    }
+    
+    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+        // Get the new view controller using segue.destination.
+        // Pass the selected object to the new view controller.
+        guard let navigationController = segue.destination as? UINavigationController
+        else {
+            return
+        }
+        if let endGameViewController = navigationController.viewControllers.first as? EndGameViewController {
+            endGameViewController.questions = questions
+            var correct = 0
+            for i in 0..<num {
+                if answers[Int(questions[i][0])!].prefix(1) == questions[i][1] {
+                    print ("YE")
+                    correct += 1
+                }
+            }
+            print ("Score: " + String(correct))
+            endGameViewController.score = correct
+        }
+        
     }
 }

@@ -37,4 +37,15 @@ class ChooseExam : UIViewController, UITableViewDelegate, UITableViewDataSource 
         
     }
     
+    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+        // Get the new view controller using segue.destination.
+        // Pass the selected object to the new view controller.
+        guard let examViewController = segue.destination as? ExamViewController,
+            let index = chooseExamTableView.indexPathForSelectedRow?.row
+            else {
+                return
+            }
+        examViewController.examNumber = index
+    }
+    
 }

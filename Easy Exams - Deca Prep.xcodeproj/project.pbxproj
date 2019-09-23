@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		8A0397BB233884F6009F0A03 /* EndGameViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8A0397BA233884F6009F0A03 /* EndGameViewController.swift */; };
+		8A0397BD233971AB009F0A03 /* WrongAnswersViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8A0397BC233971AB009F0A03 /* WrongAnswersViewController.swift */; };
 		8A09872D215FD80E00B7583C /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 8ABAA212215F10A30005CDCB /* Main.storyboard */; };
 		8A09872F215FE60100B7583C /* MainTabController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8A09872E215FE60100B7583C /* MainTabController.swift */; };
 		8A09873121612F3600B7583C /* ChooseExam.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8A09873021612F3600B7583C /* ChooseExam.swift */; };
@@ -33,6 +35,8 @@
 /* Begin PBXFileReference section */
 		736CBC3F7B4168E5AFE12A60 /* Pods-Easy Exams - Deca Prep.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Easy Exams - Deca Prep.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Easy Exams - Deca Prep/Pods-Easy Exams - Deca Prep.debug.xcconfig"; sourceTree = "<group>"; };
 		7C4F5A513ACA8DE69FB88A85 /* Pods-Easy Exams - Deca Prep.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Easy Exams - Deca Prep.release.xcconfig"; path = "Pods/Target Support Files/Pods-Easy Exams - Deca Prep/Pods-Easy Exams - Deca Prep.release.xcconfig"; sourceTree = "<group>"; };
+		8A0397BA233884F6009F0A03 /* EndGameViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EndGameViewController.swift; sourceTree = "<group>"; };
+		8A0397BC233971AB009F0A03 /* WrongAnswersViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WrongAnswersViewController.swift; sourceTree = "<group>"; };
 		8A09872E215FE60100B7583C /* MainTabController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainTabController.swift; sourceTree = "<group>"; };
 		8A09873021612F3600B7583C /* ChooseExam.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChooseExam.swift; sourceTree = "<group>"; };
 		8A0987322164692100B7583C /* ChooseExamTableCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChooseExamTableCell.swift; sourceTree = "<group>"; };
@@ -128,6 +132,8 @@
 				8A09873021612F3600B7583C /* ChooseExam.swift */,
 				8A0987322164692100B7583C /* ChooseExamTableCell.swift */,
 				8A0987382166FB8500B7583C /* ExamViewController.swift */,
+				8A0397BA233884F6009F0A03 /* EndGameViewController.swift */,
+				8A0397BC233971AB009F0A03 /* WrongAnswersViewController.swift */,
 			);
 			path = "Easy Exams - Deca Prep";
 			sourceTree = "<group>";
@@ -284,12 +290,14 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				8A0397BD233971AB009F0A03 /* WrongAnswersViewController.swift in Sources */,
 				8ABAA211215F10A30005CDCB /* MainViewController.swift in Sources */,
 				8ABAA20F215F10A30005CDCB /* AppDelegate.swift in Sources */,
 				8A0987332164692100B7583C /* ChooseExamTableCell.swift in Sources */,
 				8A09872F215FE60100B7583C /* MainTabController.swift in Sources */,
 				8A12655D2167AFA60076D617 /* SlideController.swift in Sources */,
 				8A09873121612F3600B7583C /* ChooseExam.swift in Sources */,
+				8A0397BB233884F6009F0A03 /* EndGameViewController.swift in Sources */,
 				8A0987392166FB8500B7583C /* ExamViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
