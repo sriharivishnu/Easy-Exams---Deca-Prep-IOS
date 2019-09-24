@@ -8,13 +8,42 @@
 
 import UIKit
 
-class WrongAnswersViewController: UIViewController {
-
+class WrongAnswersViewController: UIViewController, UITableViewDelegate, UITableViewDataSource {
+    
+    @IBOutlet weak var wrongAnswersTable: UITableView!
+    
+    @IBOutlet weak var wrongAnswersTableView: UITableView!
+    
+    var wrong: Array<Array<String> >?
+    var lines: Array<String>?
+    
     override func viewDidLoad() {
         super.viewDidLoad()
 
         // Do any additional setup after loading the view.
     }
+    
+    override func viewDidAppear(_ animated: Bool) {
+        super.viewDidAppear(animated)
+        wrongAnswersTableView.reloadData()
+        
+    }
+    
+    func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
+        return wrong!.count
+    }
+    
+    func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
+        let cell : WrongAnswersCell = tableView.dequeueReusableCell(withIdentifier: "WrongAnswerCell", for: indexPath) as! WrongAnswersCell
+        let r: Int = indexPath.row
+        cell.question?.text = wrong![r][0] + lines![5*Int(wrong![r][0])!]
+        cell.one?.text = lines![5*Int(wrong![r][0])!+1]
+        cell.two?.text = lines![5*Int(wrong![r][0])!+2]
+        cell.three?.text = lines![5*Int(wrong![r][0])!+3]
+        cell.four?.text = lines![5*Int(wrong![r][0])!+4]
+        return cell
+    }
+    
     
 
     /*

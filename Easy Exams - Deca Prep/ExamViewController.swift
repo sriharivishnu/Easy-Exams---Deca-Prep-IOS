@@ -165,6 +165,7 @@ class ExamViewController : UIViewController, UIScrollViewDelegate {
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
         // Get the new view controller using segue.destination.
         // Pass the selected object to the new view controller.
+        var wrong: Array<Array<String> > = Array()
         guard let navigationController = segue.destination as? UINavigationController
         else {
             return
@@ -177,9 +178,14 @@ class ExamViewController : UIViewController, UIScrollViewDelegate {
                     print ("YE")
                     correct += 1
                 }
+                else {
+                    wrong.append([questions[i][0], questions[i][1], String(i)])
+                }
             }
             print ("Score: " + String(correct))
             endGameViewController.score = correct
+            endGameViewController.wrong = wrong
+            endGameViewController.lines = lines
         }
         
     }

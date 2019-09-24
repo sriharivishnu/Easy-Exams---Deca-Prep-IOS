@@ -26,7 +26,7 @@
                     <rect key="frame" x="16" y="385" width="343" height="44"/>
                     <color key="backgroundColor" red="0.2274509804" green="0.56078431370000004" blue="0.84313725490000002" alpha="1" colorSpace="calibratedRGB"/>
                     <constraints>
-                        <constraint firstAttribute="height" constant="44" id="bth-qv-VNw"/>
+                        <constraint firstAttribute="height" relation="greaterThanOrEqual" constant="44" id="bth-qv-VNw"/>
                     </constraints>
                     <inset key="titleEdgeInsets" minX="5" minY="0.0" maxX="5" maxY="0.0"/>
                     <state key="normal" title="Button">
@@ -37,7 +37,7 @@
                     <rect key="frame" x="16" y="453" width="343" height="44"/>
                     <color key="backgroundColor" red="0.2274509804" green="0.56078431370000004" blue="0.84313725490000002" alpha="1" colorSpace="calibratedRGB"/>
                     <constraints>
-                        <constraint firstAttribute="height" constant="44" id="pZg-5o-c7G"/>
+                        <constraint firstAttribute="height" relation="greaterThanOrEqual" constant="44" id="pZg-5o-c7G"/>
                     </constraints>
                     <inset key="titleEdgeInsets" minX="5" minY="0.0" maxX="5" maxY="0.0"/>
                     <state key="normal" title="Button">
@@ -48,7 +48,7 @@
                     <rect key="frame" x="16" y="518" width="343" height="44"/>
                     <color key="backgroundColor" red="0.2274509804" green="0.56078431370000004" blue="0.84313725490000002" alpha="1" colorSpace="calibratedRGB"/>
                     <constraints>
-                        <constraint firstAttribute="height" constant="44" id="N20-5P-WrF"/>
+                        <constraint firstAttribute="height" relation="greaterThanOrEqual" constant="44" id="N20-5P-WrF"/>
                     </constraints>
                     <inset key="titleEdgeInsets" minX="5" minY="0.0" maxX="5" maxY="0.0"/>
                     <state key="normal" title="Button">
@@ -59,7 +59,7 @@
                     <rect key="frame" x="16" y="319" width="343" height="44"/>
                     <color key="backgroundColor" red="0.2274509804" green="0.56078431370000004" blue="0.84313725490000002" alpha="1" colorSpace="calibratedRGB"/>
                     <constraints>
-                        <constraint firstAttribute="height" constant="44" id="VYC-XD-1yw"/>
+                        <constraint firstAttribute="height" relation="greaterThanOrEqual" constant="44" id="VYC-XD-1yw"/>
                     </constraints>
                     <inset key="titleEdgeInsets" minX="5" minY="0.0" maxX="5" maxY="0.0"/>
                     <state key="normal" title="Button">
@@ -71,13 +71,14 @@
             <constraints>
                 <constraint firstItem="UBU-H8-2J7" firstAttribute="top" secondItem="Vvp-2b-UDp" secondAttribute="top" constant="97" id="3l9-mr-hHM"/>
                 <constraint firstItem="p93-gX-qLb" firstAttribute="leading" secondItem="jBl-ta-EY6" secondAttribute="leading" id="4Ap-ar-Trn"/>
-                <constraint firstAttribute="bottom" secondItem="wu6-5f-7Dl" secondAttribute="bottom" constant="105" id="4Yg-EE-y3h"/>
+                <constraint firstAttribute="bottom" relation="greaterThanOrEqual" secondItem="wu6-5f-7Dl" secondAttribute="bottom" constant="20" id="4Yg-EE-y3h"/>
                 <constraint firstItem="p93-gX-qLb" firstAttribute="trailing" secondItem="jBl-ta-EY6" secondAttribute="trailing" id="6hc-vR-6sE"/>
                 <constraint firstItem="UBU-H8-2J7" firstAttribute="leading" secondItem="Vvp-2b-UDp" secondAttribute="leading" constant="24" id="87U-Ib-4TH"/>
                 <constraint firstItem="jBl-ta-EY6" firstAttribute="trailing" secondItem="LHu-As-z1p" secondAttribute="trailing" id="EHX-rM-lHA"/>
                 <constraint firstItem="LHu-As-z1p" firstAttribute="leading" secondItem="wu6-5f-7Dl" secondAttribute="leading" id="Jgz-3u-3wD"/>
                 <constraint firstItem="p93-gX-qLb" firstAttribute="trailing" secondItem="Vvp-2b-UDp" secondAttribute="trailingMargin" id="Kx9-ha-UeO"/>
                 <constraint firstItem="wu6-5f-7Dl" firstAttribute="top" secondItem="LHu-As-z1p" secondAttribute="bottom" constant="21" id="LED-S7-1IM"/>
+                <constraint firstItem="pAz-7h-WnE" firstAttribute="bottom" secondItem="wu6-5f-7Dl" secondAttribute="bottom" constant="105" id="OkT-M3-RrF"/>
                 <constraint firstItem="p93-gX-qLb" firstAttribute="top" secondItem="UBU-H8-2J7" secondAttribute="bottom" constant="36" id="Roz-xk-K5o"/>
                 <constraint firstItem="UBU-H8-2J7" firstAttribute="centerX" secondItem="p93-gX-qLb" secondAttribute="centerX" id="YdP-J8-brn"/>
                 <constraint firstItem="LHu-As-z1p" firstAttribute="trailing" secondItem="wu6-5f-7Dl" secondAttribute="trailing" id="ZBg-e4-Cpe"/>

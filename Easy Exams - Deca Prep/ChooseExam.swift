@@ -23,9 +23,6 @@ class ChooseExam : UIViewController, UITableViewDelegate, UITableViewDataSource 
         return cell
     }
     
-    func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
-        
-    }
     @IBOutlet weak var showChooseExams: UITableView!
     override func viewDidLoad() {
         super.viewDidLoad()

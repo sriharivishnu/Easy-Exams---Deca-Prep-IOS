@@ -18,6 +18,7 @@ class EndGameViewController: UIViewController {
     
     var questions: Array<Array<String> >?
     var wrong: Array<Array<String> >?
+    var lines: Array<String>?
     var score: Int?
     
     override func viewDidLoad() {
@@ -35,9 +36,10 @@ class EndGameViewController: UIViewController {
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
         // Get the new view controller using segue.destination.
         // Pass the selected object to the new view controller.
-    }
-    @IBAction func go_back(_ sender: Any) {
-        _ = navigationController?.popViewController(animated: true)
+        if let target = segue.destination as? WrongAnswersViewController {
+            target.wrong = wrong
+            target.lines = lines
+        }
     }
     
 
