@@ -156,7 +156,6 @@ class ExamViewController : UIViewController, UIScrollViewDelegate {
         }
     }
     func scrollViewDidScroll(_ scrollView: UIScrollView) {
-        print (getSlide())
     }
     func getSlide() -> Int {
         return Int(examScrollView.contentOffset.x/view.frame.width)
@@ -175,17 +174,16 @@ class ExamViewController : UIViewController, UIScrollViewDelegate {
             var correct = 0
             for i in 0..<num {
                 if answers[Int(questions[i][0])!].prefix(1) == questions[i][1] {
-                    print ("YE")
                     correct += 1
                 }
                 else {
                     wrong.append([questions[i][0], questions[i][1], String(i)])
                 }
             }
-            print ("Score: " + String(correct))
             endGameViewController.score = correct
             endGameViewController.wrong = wrong
             endGameViewController.lines = lines
+            endGameViewController.answers = answers
         }
         
     }

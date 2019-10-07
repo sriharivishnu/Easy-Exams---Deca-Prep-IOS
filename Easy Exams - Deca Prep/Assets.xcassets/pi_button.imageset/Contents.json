@@ -2,17 +2,17 @@
   "images" : [
     {
       "idiom" : "universal",
-      "filename" : "pibutton.png",
+      "filename" : "performance_button.png",
       "scale" : "1x"
     },
     {
       "idiom" : "universal",
-      "filename" : "pibutton@2x.png",
+      "filename" : "performance_button-1.png",
       "scale" : "2x"
     },
     {
       "idiom" : "universal",
-      "filename" : "pibutton@3x.png",
+      "filename" : "performance_button-2.png",
       "scale" : "3x"
     }
   ],

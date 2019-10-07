@@ -35,8 +35,14 @@
                                 </constraints>
                                 <state key="normal" backgroundImage="pi_button"/>
                             </button>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="logo_full" translatesAutoresizingMaskIntoConstraints="NO" id="4wx-uc-ZkD" userLabel="logoFull">
+                                <rect key="frame" x="94" y="98" width="243" height="197"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="197" id="Vbl-x0-uLV"/>
+                                </constraints>
+                            </imageView>
                             <button opaque="NO" contentMode="scaleAspectFit" contentHorizontalAlignment="center" contentVerticalAlignment="fill" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="fbK-jT-CTC" userLabel="wrongAnswersButton">
-                                <rect key="frame" x="90" y="668" width="247" height="55"/>
+                                <rect key="frame" x="94" y="667" width="247" height="55"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="55" id="q08-SF-ngS"/>
                                 </constraints>
@@ -45,24 +51,18 @@
                                     <segue destination="NRP-Nc-gDU" kind="show" id="OME-nZ-7Cf"/>
                                 </connections>
                             </button>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="logo_full" translatesAutoresizingMaskIntoConstraints="NO" id="4wx-uc-ZkD" userLabel="logoFull">
-                                <rect key="frame" x="94" y="98" width="243" height="197"/>
-                                <constraints>
-                                    <constraint firstAttribute="height" constant="197" id="Vbl-x0-uLV"/>
-                                </constraints>
-                            </imageView>
                         </subviews>
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <constraints>
-                            <constraint firstItem="4wx-uc-ZkD" firstAttribute="trailing" secondItem="fbK-jT-CTC" secondAttribute="trailing" id="4v6-qr-i3H"/>
+                            <constraint firstItem="4wx-uc-ZkD" firstAttribute="trailing" secondItem="fbK-jT-CTC" secondAttribute="trailing" constant="-4" id="4v6-qr-i3H"/>
                             <constraint firstItem="4wx-uc-ZkD" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="94" id="BFj-uZ-HIm"/>
-                            <constraint firstItem="fbK-jT-CTC" firstAttribute="top" secondItem="fNE-Af-deS" secondAttribute="bottom" constant="9" id="Bh0-Bm-aL7"/>
-                            <constraint firstItem="fbK-jT-CTC" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="90" id="IM3-RN-4Ax"/>
+                            <constraint firstItem="fbK-jT-CTC" firstAttribute="top" secondItem="fNE-Af-deS" secondAttribute="bottom" constant="8" id="Bh0-Bm-aL7"/>
+                            <constraint firstItem="fbK-jT-CTC" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="94" id="IM3-RN-4Ax"/>
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="4wx-uc-ZkD" secondAttribute="trailing" constant="77" id="Jdg-NG-2Wo"/>
                             <constraint firstItem="rjR-oG-9Zu" firstAttribute="trailing" secondItem="fNE-Af-deS" secondAttribute="trailing" id="LGx-EY-i0I"/>
                             <constraint firstItem="rjR-oG-9Zu" firstAttribute="leading" secondItem="fNE-Af-deS" secondAttribute="leading" id="LVC-go-kxJ"/>
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="rjR-oG-9Zu" secondAttribute="trailing" constant="73" id="LYQ-yp-mOq"/>
-                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="fbK-jT-CTC" secondAttribute="bottom" constant="90" id="ZeN-jm-qfR"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="fbK-jT-CTC" secondAttribute="bottom" constant="91" id="ZeN-jm-qfR"/>
                             <constraint firstItem="fNE-Af-deS" firstAttribute="top" secondItem="rjR-oG-9Zu" secondAttribute="bottom" constant="9" id="gsB-f5-gQ4"/>
                             <constraint firstItem="4wx-uc-ZkD" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="54" id="mbC-F2-xOg"/>
                             <constraint firstItem="4wx-uc-ZkD" firstAttribute="leading" secondItem="rjR-oG-9Zu" secondAttribute="leading" id="qqo-wm-Kzn"/>
@@ -296,6 +296,9 @@
                                     <constraint firstAttribute="height" constant="50" id="uxQ-qf-QZg"/>
                                 </constraints>
                                 <state key="normal" image="new_exam_button"/>
+                                <connections>
+                                    <segue destination="PVT-lc-Amb" kind="show" id="PWx-Z2-Rbl"/>
+                                </connections>
                             </button>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
@@ -542,14 +545,15 @@
         <image name="home_icon" width="25" height="25"/>
         <image name="logo_full" width="140" height="128"/>
         <image name="new_exam_button" width="85" height="17"/>
-        <image name="pi_button" width="200" height="40"/>
+        <image name="pi_button" width="170" height="37"/>
         <image name="profile_icon" width="25" height="25"/>
         <image name="resources_icon" width="25" height="25"/>
-        <image name="start_exam_button" width="200" height="40"/>
-        <image name="wrong_answers_button" width="200" height="39"/>
+        <image name="start_exam_button" width="170" height="37"/>
+        <image name="wrong_answers_button" width="170" height="37"/>
     </resources>
     <inferredMetricsTieBreakers>
-        <segue reference="iVK-lc-Med"/>
+        <segue reference="OME-nZ-7Cf"/>
+        <segue reference="OF5-6h-n2I"/>
     </inferredMetricsTieBreakers>
     <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
 </document>

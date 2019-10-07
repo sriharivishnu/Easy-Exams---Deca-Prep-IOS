@@ -19,6 +19,7 @@ class EndGameViewController: UIViewController {
     var questions: Array<Array<String> >?
     var wrong: Array<Array<String> >?
     var lines: Array<String>?
+    var answers: Array<String>?
     var score: Int?
     
     override func viewDidLoad() {
@@ -39,6 +40,7 @@ class EndGameViewController: UIViewController {
         if let target = segue.destination as? WrongAnswersViewController {
             target.wrong = wrong
             target.lines = lines
+            target.answers = answers
         }
     }
     
