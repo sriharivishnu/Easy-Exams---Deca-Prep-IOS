@@ -80,11 +80,11 @@
             <objects>
                 <viewController id="PVT-lc-Amb" userLabel="ChooseExam" customClass="ChooseExam" customModule="Easy_Exams___Deca_Prep" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="kCQ-X1-46T">
-                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="808"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" usesAttributedText="YES" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="0C5-JI-LcQ">
-                                <rect key="frame" x="136.33333333333337" y="70" width="176.66666666666663" height="32"/>
+                                <rect key="frame" x="136.33333333333337" y="26" width="176.66666666666663" height="32"/>
                                 <attributedString key="attributedText">
                                     <fragment content="Choose Exam:">
                                         <attributes>
@@ -97,7 +97,7 @@
                                 <nil key="highlightedColor"/>
                             </label>
                             <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="58" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="t0e-nT-U13">
-                                <rect key="frame" x="0.0" y="158" width="414" height="413"/>
+                                <rect key="frame" x="0.0" y="114" width="414" height="369"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <prototypes>
                                     <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="ChooseExamTableCell" rowHeight="58" id="Tr0-8l-Qq1" customClass="ChooseExamTableCell" customModule="Easy_Exams___Deca_Prep" customModuleProvider="target">
@@ -183,7 +183,7 @@
                                         </connections>
                                     </barButtonItem>
                                 </items>
-                                <color key="barTintColor" red="0.14117647059999999" green="0.4431372549" blue="0.63921568630000003" alpha="1" colorSpace="calibratedRGB"/>
+                                <color key="barTintColor" red="0.13725490196078433" green="0.36078431372549019" blue="0.58039215686274503" alpha="1" colorSpace="calibratedRGB"/>
                             </toolbar>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="00:00" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="FC2-Nq-jQC">
                                 <rect key="frame" x="35" y="776.33333333333337" width="48" height="20"/>
@@ -193,7 +193,7 @@
                             </label>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="gVG-lx-1st">
                                 <rect key="frame" x="0.0" y="0.0" width="414" height="48"/>
-                                <color key="backgroundColor" red="0.14117647059999999" green="0.4431372549" blue="0.63921568630000003" alpha="1" colorSpace="calibratedRGB"/>
+                                <color key="backgroundColor" red="0.13725490196078433" green="0.36078431372549019" blue="0.58039215686274503" alpha="1" colorSpace="calibratedRGB"/>
                                 <color key="tintColor" red="0.2274509804" green="0.56078431370000004" blue="0.84313725490000002" alpha="1" colorSpace="calibratedRGB"/>
                             </view>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Marketing Exam" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Asu-d3-6AL">
@@ -264,19 +264,22 @@
                         <rect key="frame" x="0.0" y="0.0" width="414" height="808"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="background_end_game" translatesAutoresizingMaskIntoConstraints="NO" id="xPK-o4-fBz">
+                                <rect key="frame" x="0.0" y="-90" width="414" height="898"/>
+                            </imageView>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="nTS-Rv-vnx">
                                 <rect key="frame" x="103" y="144" width="208" height="51"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="51" id="RBT-aX-pzi"/>
                                 </constraints>
                                 <fontDescription key="fontDescription" type="system" pointSize="28"/>
-                                <nil key="textColor"/>
+                                <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="fill" contentVerticalAlignment="fill" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="lui-MB-cJR">
-                                <rect key="frame" x="82" y="434" width="250" height="50"/>
+                                <rect key="frame" x="72" y="424" width="270" height="60"/>
                                 <constraints>
-                                    <constraint firstAttribute="height" constant="50" id="QbQ-30-xwD"/>
+                                    <constraint firstAttribute="height" constant="60" id="QbQ-30-xwD"/>
                                 </constraints>
                                 <state key="normal" image="wrong_answers_button"/>
                                 <connections>
@@ -284,16 +287,16 @@
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="fill" contentVerticalAlignment="fill" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="m2Q-kZ-kX5">
-                                <rect key="frame" x="82" y="509" width="250" height="50"/>
+                                <rect key="frame" x="72" y="492" width="270" height="60"/>
                                 <constraints>
-                                    <constraint firstAttribute="height" constant="50" id="fe4-Ag-siF"/>
+                                    <constraint firstAttribute="height" constant="60" id="fe4-Ag-siF"/>
                                 </constraints>
                                 <state key="normal" image="full_exam_button"/>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="fill" contentVerticalAlignment="fill" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="mMi-8z-pMR">
-                                <rect key="frame" x="82" y="585" width="250" height="50"/>
+                                <rect key="frame" x="72" y="560" width="270" height="60"/>
                                 <constraints>
-                                    <constraint firstAttribute="height" constant="50" id="uxQ-qf-QZg"/>
+                                    <constraint firstAttribute="height" constant="60" id="uxQ-qf-QZg"/>
                                 </constraints>
                                 <state key="normal" image="new_exam_button"/>
                                 <connections>
@@ -303,15 +306,19 @@
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <constraints>
-                            <constraint firstItem="mMi-8z-pMR" firstAttribute="top" secondItem="m2Q-kZ-kX5" secondAttribute="bottom" constant="26" id="0I3-dR-GpM"/>
-                            <constraint firstItem="m2Q-kZ-kX5" firstAttribute="top" secondItem="lui-MB-cJR" secondAttribute="bottom" constant="25" id="2Iz-nE-J5H"/>
+                            <constraint firstItem="mMi-8z-pMR" firstAttribute="top" secondItem="m2Q-kZ-kX5" secondAttribute="bottom" constant="8" id="0I3-dR-GpM"/>
+                            <constraint firstItem="m2Q-kZ-kX5" firstAttribute="top" secondItem="lui-MB-cJR" secondAttribute="bottom" constant="8" id="2Iz-nE-J5H"/>
                             <constraint firstItem="m2Q-kZ-kX5" firstAttribute="trailing" secondItem="mMi-8z-pMR" secondAttribute="trailing" id="DGJ-ve-TpI"/>
-                            <constraint firstItem="lui-MB-cJR" firstAttribute="leading" secondItem="esk-fX-kZp" secondAttribute="leading" constant="82" id="FmX-SL-L14"/>
+                            <constraint firstItem="lui-MB-cJR" firstAttribute="leading" secondItem="esk-fX-kZp" secondAttribute="leading" constant="72" id="FmX-SL-L14"/>
                             <constraint firstItem="nTS-Rv-vnx" firstAttribute="centerX" secondItem="T3j-nc-dOo" secondAttribute="centerX" id="HYI-TG-Jyf"/>
                             <constraint firstItem="nTS-Rv-vnx" firstAttribute="leading" secondItem="esk-fX-kZp" secondAttribute="leading" constant="103" id="NX3-U6-u0A"/>
+                            <constraint firstItem="xPK-o4-fBz" firstAttribute="leading" secondItem="T3j-nc-dOo" secondAttribute="leading" id="Os8-Dd-dLW"/>
+                            <constraint firstAttribute="bottom" secondItem="xPK-o4-fBz" secondAttribute="bottom" id="VWy-FO-OIh"/>
                             <constraint firstItem="nTS-Rv-vnx" firstAttribute="top" secondItem="esk-fX-kZp" secondAttribute="top" constant="144" id="ba6-EQ-KK0"/>
-                            <constraint firstItem="esk-fX-kZp" firstAttribute="bottom" secondItem="mMi-8z-pMR" secondAttribute="bottom" constant="139" id="kUH-hX-hTm"/>
+                            <constraint firstItem="xPK-o4-fBz" firstAttribute="centerX" secondItem="mMi-8z-pMR" secondAttribute="centerX" id="guR-hm-H25"/>
+                            <constraint firstItem="esk-fX-kZp" firstAttribute="bottom" secondItem="mMi-8z-pMR" secondAttribute="bottom" constant="154" id="kUH-hX-hTm"/>
                             <constraint firstItem="m2Q-kZ-kX5" firstAttribute="centerX" secondItem="esk-fX-kZp" secondAttribute="centerX" id="mR7-3j-N2D"/>
+                            <constraint firstItem="xPK-o4-fBz" firstAttribute="top" secondItem="T3j-nc-dOo" secondAttribute="topMargin" constant="-90" id="nMm-cF-9UW"/>
                             <constraint firstItem="lui-MB-cJR" firstAttribute="leading" secondItem="m2Q-kZ-kX5" secondAttribute="leading" id="ojY-kJ-LUS"/>
                             <constraint firstItem="nTS-Rv-vnx" firstAttribute="centerX" secondItem="lui-MB-cJR" secondAttribute="centerX" id="p38-vv-1PM"/>
                             <constraint firstItem="lui-MB-cJR" firstAttribute="trailing" secondItem="m2Q-kZ-kX5" secondAttribute="trailing" id="wWX-qB-u2l"/>
@@ -506,7 +513,7 @@
                         <autoresizingMask key="autoresizingMask"/>
                         <color key="backgroundColor" red="0.14117647058823529" green="0.44313725490196076" blue="0.63921568627450975" alpha="1" colorSpace="calibratedRGB"/>
                         <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                        <color key="barTintColor" red="0.14117647059999999" green="0.4431372549" blue="0.63921568630000003" alpha="1" colorSpace="calibratedRGB"/>
+                        <color key="barTintColor" red="0.13725490196078433" green="0.36078431372549019" blue="0.58039215686274503" alpha="1" colorSpace="calibratedRGB"/>
                         <color key="selectedImageTintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                     </tabBar>
                     <connections>
@@ -527,7 +534,7 @@
                     <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" translucent="NO" id="ew1-eP-KrD">
                         <rect key="frame" x="0.0" y="44" width="414" height="44"/>
                         <autoresizingMask key="autoresizingMask"/>
-                        <color key="barTintColor" red="0.14117647059999999" green="0.4431372549" blue="0.63921568630000003" alpha="1" colorSpace="calibratedRGB"/>
+                        <color key="barTintColor" red="0.13725490196078433" green="0.36078431372549019" blue="0.58039215686274503" alpha="1" colorSpace="calibratedRGB"/>
                     </navigationBar>
                     <nil name="viewControllers"/>
                     <connections>
@@ -540,11 +547,12 @@
         </scene>
     </scenes>
     <resources>
+        <image name="background_end_game" width="137" height="244"/>
         <image name="blue_logo" width="60" height="60"/>
-        <image name="full_exam_button" width="85" height="17"/>
+        <image name="full_exam_button" width="170" height="37"/>
         <image name="home_icon" width="25" height="25"/>
         <image name="logo_full" width="140" height="128"/>
-        <image name="new_exam_button" width="85" height="17"/>
+        <image name="new_exam_button" width="170" height="37"/>
         <image name="pi_button" width="170" height="37"/>
         <image name="profile_icon" width="25" height="25"/>
         <image name="resources_icon" width="25" height="25"/>
@@ -553,7 +561,7 @@
     </resources>
     <inferredMetricsTieBreakers>
         <segue reference="OME-nZ-7Cf"/>
-        <segue reference="OF5-6h-n2I"/>
+        <segue reference="PWx-Z2-Rbl"/>
     </inferredMetricsTieBreakers>
     <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
 </document>
