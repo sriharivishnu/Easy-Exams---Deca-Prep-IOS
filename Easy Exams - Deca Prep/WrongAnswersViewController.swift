@@ -37,13 +37,19 @@ class WrongAnswersViewController: UIViewController, UITableViewDelegate, UITable
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         let cell : WrongAnswersCell = tableView.dequeueReusableCell(withIdentifier: "WrongAnswerCell", for: indexPath) as! WrongAnswersCell
         let r: Int = indexPath.row
-        
-        cell.question?.text = wrong![r][0] + lines![5*Int(wrong![r][0])!]
+        let questionText = lines![5*Int(wrong![r][0])!]
+        let formattedQuestion = wrong![r][2]+". "+String(questionText[questionText.index(questionText.startIndex, offsetBy: 3)..<questionText.endIndex])
+        cell.question?.text = formattedQuestion
         cell.one?.text = lines![5*Int(wrong![r][0])!+1]
         cell.two?.text = lines![5*Int(wrong![r][0])!+2]
         cell.three?.text = lines![5*Int(wrong![r][0])!+3]
         cell.four?.text = lines![5*Int(wrong![r][0])!+4]
-
+        
+        cell.one?.textColor = UIColor.black
+        cell.two?.textColor = UIColor.black
+        cell.three?.textColor = UIColor.black
+        cell.four?.textColor = UIColor.black
+        
         if (wrong![r][1] == "A") {
             cell.one?.textColor = UIColor.red
         }
@@ -57,21 +63,21 @@ class WrongAnswersViewController: UIViewController, UITableViewDelegate, UITable
             cell.four?.textColor = UIColor.red
         }
         else {
-            cell.question?.text = "(UNANSWERED) " + wrong![r][0] + lines![5*Int(wrong![r][0])!]
+            cell.question?.text = "(UNANSWERED) " + formattedQuestion
         }
         
-//        if (answers![Int(wrong![r][0])!].prefix(1) == "A") {
-//            cell.one?.textColor = UIColor.green
-//        }
-//        else if (answers![Int(wrong![r][0])!].prefix(1) == "B") {
-//            cell.two?.textColor = UIColor.green
-//        }
-//        else if (answers![Int(wrong![r][0])!].prefix(1) == "C") {
-//            cell.three?.textColor = UIColor.green
-//        }
-//        else if (answers![Int(wrong![r][0])!].prefix(1) == "D") {
-//            cell.four?.textColor = UIColor.green
-//        }
+        if (answers![Int(wrong![r][0])!].prefix(1) == "A") {
+            cell.one?.textColor = UIColor.green
+        }
+        else if (answers![Int(wrong![r][0])!].prefix(1) == "B") {
+            cell.two?.textColor = UIColor.green
+        }
+        else if (answers![Int(wrong![r][0])!].prefix(1) == "C") {
+            cell.three?.textColor = UIColor.green
+        }
+        else if (answers![Int(wrong![r][0])!].prefix(1) == "D") {
+            cell.four?.textColor = UIColor.green
+        }
         print (r, wrong![r][1])
         return cell
     }
