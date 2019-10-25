@@ -25,7 +25,7 @@ class Slide: UIView {
     */
     func createSlides() -> [Slide] {
         let slide:Slide = Bundle.main.loadNibNamed("Slide", owner: self, options: nil)?.first as! Slide
-        slide.questionText.text = "YEET"
+        slide.questionText.text = "Test"
         return [slide];
     }
     

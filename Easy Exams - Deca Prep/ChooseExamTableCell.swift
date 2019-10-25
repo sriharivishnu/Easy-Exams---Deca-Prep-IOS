@@ -9,6 +9,7 @@
 import Foundation
 import UIKit
 
+//Custom Choose Exam Table Cell class
 class ChooseExamTableCell : UITableViewCell {
     //MARK: Properties
     @IBOutlet weak var examLabelName: UILabel!

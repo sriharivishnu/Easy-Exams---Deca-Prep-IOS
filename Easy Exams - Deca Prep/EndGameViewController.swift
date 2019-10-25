@@ -24,6 +24,7 @@ class EndGameViewController: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        //Set the score onscreen
         if (score != nil) {
             show_score.text = String(score!) + "/100"
         }
@@ -33,7 +34,7 @@ class EndGameViewController: UIViewController {
         // Do any additional setup after loading the view.
     }
     
-
+    //Prepare depending on target
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
         // Get the new view controller using segue.destination.
         // Pass the selected object to the new view controller.

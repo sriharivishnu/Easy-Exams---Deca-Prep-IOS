@@ -39,17 +39,23 @@ class WrongAnswersViewController: UIViewController, UITableViewDelegate, UITable
         let r: Int = indexPath.row
         let questionText = lines![5*Int(wrong![r][0])!]
         let formattedQuestion = wrong![r][2]+". "+String(questionText[questionText.index(questionText.startIndex, offsetBy: 3)..<questionText.endIndex])
+        
+        //Question text
         cell.question?.text = formattedQuestion
+        
+        //Get the text for each question
         cell.one?.text = lines![5*Int(wrong![r][0])!+1]
         cell.two?.text = lines![5*Int(wrong![r][0])!+2]
         cell.three?.text = lines![5*Int(wrong![r][0])!+3]
         cell.four?.text = lines![5*Int(wrong![r][0])!+4]
         
+        //Reset the cell's options' colour to black
         cell.one?.textColor = UIColor.black
         cell.two?.textColor = UIColor.black
         cell.three?.textColor = UIColor.black
         cell.four?.textColor = UIColor.black
         
+        //Set the user's selection's colour as red
         if (wrong![r][1] == "A") {
             cell.one?.textColor = UIColor.red
         }
@@ -66,6 +72,7 @@ class WrongAnswersViewController: UIViewController, UITableViewDelegate, UITable
             cell.question?.text = "(UNANSWERED) " + formattedQuestion
         }
         
+        //Set the correct answer's colour as green
         if (answers![Int(wrong![r][0])!].prefix(1) == "A") {
             cell.one?.textColor = UIColor.green
         }
@@ -81,16 +88,6 @@ class WrongAnswersViewController: UIViewController, UITableViewDelegate, UITable
         print (r, wrong![r][1])
         return cell
     }
-    
 
-    /*
-    // MARK: - Navigation
-
-    // In a storyboard-based application, you will often want to do a little preparation before navigation
-    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        // Get the new view controller using segue.destination.
-        // Pass the selected object to the new view controller.
-    }
-    */
 
 }
